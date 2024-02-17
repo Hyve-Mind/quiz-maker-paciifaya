@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Question Form</title>
+</head>
+
+<body>
+    <div class="question-container">
+        <div class="header">
+            <h1>Question Form</h1>
+        </div>
+        <div class="form-container">
+            <form id="question-form">
+                <label for="question"></label>
+                <input type="text" id="question" placeholder="Question" required>
+                <div class="answer-input">
+                    <div>
+                        <label for="answer1"></label>
+                        <input type="radio" name="correct-answer" class="answer" value="Answer 1" checked>
+                        <input type="text" id="answer1" class="answer" placeholder="Answer1" required>
+                        <br>
+                        <label for="answer2"></label>
+                        <input type="radio" name="correct-answer" class="answer" value="Answer 2">
+                        <input type="text" id="answer2" class="answer" placeholder="Answer2" required>
+                        <br>
+                    </div>
+                    <div>
+                        <label for="answer3"></label>
+                        <input type="radio" name="correct-answer" class="answer" value="Answer 3">
+                        <input type="text" id="answer3" class="answer" placeholder="Answer3" required>
+                        <br>
+                        <label for="answer4"></label>
+                        <input type="radio" name="correct-answer" class="answer" value="Answer 4">
+                        <input type="text" id="answer4" class="answer" placeholder="Answer4" required>
+                    </div>
+                </div>
+                <button type="submit" id="submit-btn">Add Question</button>
+            </form>
+        </div>
+    </div>
+    <div class="questions-container" id="questions-container"></div>
+
+    <script src="your-script-file.js"></script>
+</body>
+
+</html>
