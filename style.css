@@ -1,0 +1,145 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: blue;
+    --bgcolor: aliceblue;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+.header-container {
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20em;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--color);
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.logo:hover {
+    opacity: 70%;
+    transform: rotate(360deg);
+}
+
+.header {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-list li {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-list li:hover {
+    transform: translate3d(0px, -4px, 0px);
+}
+
+.login-container {
+    display: flex;
+    gap: 20px;
+}
+
+.login-btn {
+    border: none;
+    background-color: var(--bgcolor);
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--color);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.login-btn:hover {
+    opacity: 70%;
+}
+
+.sign-up-btn {
+    padding: 8px 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--color);
+    border: none;
+    border-radius: 8px;
+    border: 2px solid var(--color);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover {
+    color: var(--color);
+    border: 2px solid var(--color);
+    background-color: var(--bgcolor);
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 75px;
+}
+
+.hero-section h1 {
+    color: var(--color);
+    font-size: 3.5rem;
+}
+
+.hero-section button {
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--color);
+    border: none;
+    border-radius: 8px;
+    border: 2px solid var(--color);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.hero-section button:hover {
+    color: var(--color);
+    border: 2px solid var(--color);
+    background-color: var(--bgcolor);
+}
+
+.img {
+    height: 27rem;
+    width: 40rem;
+    border-radius: 0px 0px 200px 0px;
+}
+
+.img img {
+    height: 27rem;
+    width: 40rem;
+    border-radius: 0px 0px 200px 0px;
+}
